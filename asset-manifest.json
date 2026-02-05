@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/react-http-crud/static/css/main.add2067c.css",
+    "main.js": "/react-http-crud/static/js/main.70cea59c.js",
+    "blueprint-icons-all-paths-loader.js": "/react-http-crud/static/js/blueprint-icons-all-paths-loader.051291a7.chunk.js",
+    "blueprint-icons-split-paths-by-size-loader.js": "/react-http-crud/static/js/blueprint-icons-split-paths-by-size-loader.53d454d5.chunk.js",
+    "blueprint-icons-all-paths.js": "/react-http-crud/static/js/blueprint-icons-all-paths.d890cc80.chunk.js",
+    "blueprint-icons-16px-paths.js": "/react-http-crud/static/js/blueprint-icons-16px-paths.7c285e28.chunk.js",
+    "blueprint-icons-20px-paths.js": "/react-http-crud/static/js/blueprint-icons-20px-paths.309f78a5.chunk.js",
+    "static/media/blueprint-icons-20.svg?": "/react-http-crud/static/media/blueprint-icons-20.e053cde7fbdcb405ba14.svg",
+    "static/media/blueprint-icons-16.svg?": "/react-http-crud/static/media/blueprint-icons-16.a3184b43073d6a13b0ff.svg",
+    "static/media/blueprint-icons-20.eot?": "/react-http-crud/static/media/blueprint-icons-20.c3fd32ae7f4dcefed6c1.eot",
+    "static/media/blueprint-icons-20.ttf?": "/react-http-crud/static/media/blueprint-icons-20.3ccdf9151258c64e0e4f.ttf",
+    "static/media/blueprint-icons-16.eot?": "/react-http-crud/static/media/blueprint-icons-16.a06729235b0be3c89599.eot",
+    "static/media/blueprint-icons-16.ttf?": "/react-http-crud/static/media/blueprint-icons-16.e7a60f2ff401d5c92c24.ttf",
+    "static/media/blueprint-icons-20.woff?": "/react-http-crud/static/media/blueprint-icons-20.cc49c50484ce06eca273.woff",
+    "static/media/blueprint-icons-16.woff?": "/react-http-crud/static/media/blueprint-icons-16.ed58254a5b3bcbb792c0.woff",
+    "static/media/blueprint-icons-20.woff2?": "/react-http-crud/static/media/blueprint-icons-20.c25fbc90b603987ed77b.woff2",
+    "static/media/blueprint-icons-16.woff2?": "/react-http-crud/static/media/blueprint-icons-16.f313e46860f341decc69.woff2",
+    "index.html": "/react-http-crud/index.html",
+    "main.add2067c.css.map": "/react-http-crud/static/css/main.add2067c.css.map",
+    "main.70cea59c.js.map": "/react-http-crud/static/js/main.70cea59c.js.map",
+    "blueprint-icons-all-paths-loader.051291a7.chunk.js.map": "/react-http-crud/static/js/blueprint-icons-all-paths-loader.051291a7.chunk.js.map",
+    "blueprint-icons-split-paths-by-size-loader.53d454d5.chunk.js.map": "/react-http-crud/static/js/blueprint-icons-split-paths-by-size-loader.53d454d5.chunk.js.map",
+    "blueprint-icons-all-paths.d890cc80.chunk.js.map": "/react-http-crud/static/js/blueprint-icons-all-paths.d890cc80.chunk.js.map",
+    "blueprint-icons-16px-paths.7c285e28.chunk.js.map": "/react-http-crud/static/js/blueprint-icons-16px-paths.7c285e28.chunk.js.map",
+    "blueprint-icons-20px-paths.309f78a5.chunk.js.map": "/react-http-crud/static/js/blueprint-icons-20px-paths.309f78a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.add2067c.css",
+    "static/js/main.70cea59c.js"
+  ]
+}
