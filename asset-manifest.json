@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-http-crud/static/css/main.946b8df2.css",
-    "main.js": "/react-http-crud/static/js/main.6951fe85.js",
+    "main.css": "/react-http-crud/static/css/main.8e1d830b.css",
+    "main.js": "/react-http-crud/static/js/main.23d49b45.js",
     "blueprint-icons-all-paths-loader.js": "/react-http-crud/static/js/blueprint-icons-all-paths-loader.46614965.chunk.js",
     "blueprint-icons-split-paths-by-size-loader.js": "/react-http-crud/static/js/blueprint-icons-split-paths-by-size-loader.f8faca78.chunk.js",
     "blueprint-icons-all-paths.js": "/react-http-crud/static/js/blueprint-icons-all-paths.3ee7da17.chunk.js",
@@ -18,8 +18,8 @@
     "static/media/blueprint-icons-20.woff2?": "/react-http-crud/static/media/blueprint-icons-20.3dd8a3908ca677a5883a.woff2",
     "static/media/blueprint-icons-16.woff2?": "/react-http-crud/static/media/blueprint-icons-16.ac7c217773ea8b74720c.woff2",
     "index.html": "/react-http-crud/index.html",
-    "main.946b8df2.css.map": "/react-http-crud/static/css/main.946b8df2.css.map",
-    "main.6951fe85.js.map": "/react-http-crud/static/js/main.6951fe85.js.map",
+    "main.8e1d830b.css.map": "/react-http-crud/static/css/main.8e1d830b.css.map",
+    "main.23d49b45.js.map": "/react-http-crud/static/js/main.23d49b45.js.map",
     "blueprint-icons-all-paths-loader.46614965.chunk.js.map": "/react-http-crud/static/js/blueprint-icons-all-paths-loader.46614965.chunk.js.map",
     "blueprint-icons-split-paths-by-size-loader.f8faca78.chunk.js.map": "/react-http-crud/static/js/blueprint-icons-split-paths-by-size-loader.f8faca78.chunk.js.map",
     "blueprint-icons-all-paths.3ee7da17.chunk.js.map": "/react-http-crud/static/js/blueprint-icons-all-paths.3ee7da17.chunk.js.map",
@@ -27,7 +27,7 @@
     "blueprint-icons-20px-paths.ea5a49f7.chunk.js.map": "/react-http-crud/static/js/blueprint-icons-20px-paths.ea5a49f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.946b8df2.css",
-    "static/js/main.6951fe85.js"
+    "static/css/main.8e1d830b.css",
+    "static/js/main.23d49b45.js"
   ]
 }
