@@ -74,8 +74,13 @@
   cursor: pointer;
 }
 
-/* First column narrower */
-.custom-table td:first-child {
-  width: 120px;
-  font-weight: 600;
+.custom-table {
+  width: 60%;
+  table-layout: fixed;
+}
+
+.custom-table th,
+.custom-table td {
+  width: 33.33%;
+  text-align: center; /* optional */
 }

@@ -12,15 +12,14 @@ function App() {
     const [users, setUsers] = useState([]);
     const [newName, setNewName] = useState("")
     const [newEmail, setNewEmail] = useState("")
-    const [newWebsite, setNewWebsite] = useState("")
+    // const [newWebsite, setNewWebsite] = useState("")
 
 
     useEffect(() => {
-        fetch("https://dvmtcreaapi.bexatm.com/api/Dropdown/GetAllSkills", {
+        fetch("https://dvmtcreaapi.bexatm.com/api/getpwauser", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30"
             }
         })
             .then((response) => {
@@ -47,16 +46,15 @@ function App() {
     function addUser() {
         const name = newName.trim();
         const email = newEmail.trim();
-        const website = newWebsite.trim();
+        // const website = newWebsite.trim();
 
-        if (name && email && website) {
-            fetch("https://jsonplaceholder.typicode.com/users",
+        if (name && email) {
+            fetch("https://dvmtcreaapi.bexatm.com/api/savepwauser",
                 {
                     method: "POST",
                     body: JSON.stringify({
-                        name,
-                        email,
-                        website
+                        Name:name,
+                        Email:email,
                     }),
                     headers: {
                         "Content-Type": "application/json; charset=UTF-8 "
@@ -72,7 +70,6 @@ function App() {
                     })
                     setNewName("");
                     setNewEmail("");
-                    setNewWebsite("");
 
                 })
         }
@@ -193,6 +190,7 @@ function App() {
                     <tr>
                         <th>Record ID</th>
                         <th>Skill Name</th>
+                        <th>Email</th>
                     </tr>
                 </thead>
 
@@ -200,10 +198,35 @@ function App() {
                     {users.map(skill => (
                         <tr key={skill.RecordID}>
                             <td>{skill.RecordID}</td>
-                            <td>{skill.NameEn}</td>
+                            <td>{skill.Name}</td>
+                            <td>{skill.Email}</td>
+                            {/* <td><EditableText onChange={value => onChangeHandler(skill.RecordID, 'Email', value)} value={skill.Email} /></td> */}
                         </tr>
                     ))}
                 </tbody>
+                 <tfoot>
+                 <tr>
+                     <td></td>
+                       <td>
+                           <InputGroup
+                              value={newName}
+                             onChange={(e) => setNewName(e.target.value)}
+                               placeholder='Enter Name...'
+                          />
+                        </td>
+                       <td>
+                           <InputGroup
+                                value={newEmail}
+                                onChange={(e) => setNewEmail(e.target.value)}
+                              placeholder='Enter Email...'
+                          />
+                        </td>
+                      
+                       <td>
+                           <Button intent='success' onClick={addUser}>Add User</Button>
+                      </td>
+                   </tr>
+              </tfoot>
             </table>
         </div>
 
