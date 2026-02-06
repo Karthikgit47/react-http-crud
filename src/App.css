@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Center table on page */
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Table width & shadow */
+.custom-table {
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Header styling */
+.custom-table thead th {
+  background-color: #137cbd; /* Blueprint primary */
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Body cells */
+.custom-table tbody td {
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+/* Hover effect */
+.custom-table tbody tr:hover {
+  background-color: #f5f8fa;
+  cursor: pointer;
+}
+
+/* First column narrower */
+.custom-table td:first-child {
+  width: 120px;
+  font-weight: 600;
+}

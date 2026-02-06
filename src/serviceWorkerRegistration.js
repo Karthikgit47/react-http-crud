@@ -1,13 +1,14 @@
-// Basic CRA service worker registration
 export function register() {
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
+      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+
       navigator.serviceWorker
-        .register("/service-worker.js")
-        .then(reg => {
+        .register(swUrl)
+        .then((reg) => {
           console.log("Service Worker registered:", reg);
         })
-        .catch(err => {
+        .catch((err) => {
           console.error("SW registration failed:", err);
         });
     });
