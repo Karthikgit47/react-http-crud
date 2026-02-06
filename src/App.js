@@ -184,12 +184,12 @@ function App() {
         //     </table>
         // </div>
 
-        <div className="App table-wrapper">
-            <table className="bp4-html-table bp4-html-table-striped custom-table">
+        <div className="App table-wrapper" >
+            <table className="bp4-html-table bp4-html-table-striped custom-table" >
                 <thead>
                     <tr>
-                        <th>Record ID</th>
-                        <th>Skill Name</th>
+                        <th>S.No</th>
+                        <th>Name</th>
                         <th>Email</th>
                     </tr>
                 </thead>

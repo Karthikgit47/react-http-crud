@@ -38,49 +38,108 @@
 }
 
 
-/* Center table on page */
+
 .table-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-}
-
-/* Table width & shadow */
-.custom-table {
-  width: 60%;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-}
-
-/* Header styling */
-.custom-table thead th {
-  background-color: #137cbd; /* Blueprint primary */
-  color: white;
-  font-size: 15px;
-  padding: 12px;
-  text-align: left;
-}
-
-/* Body cells */
-.custom-table tbody td {
-  padding: 10px 12px;
-  font-size: 14px;
-}
-
-/* Hover effect */
-.custom-table tbody tr:hover {
-  background-color: #f5f8fa;
-  cursor: pointer;
+  padding: 0 16px;
 }
 
 .custom-table {
-  width: 60%;
-  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
 }
 
 .custom-table th,
 .custom-table td {
-  width: 33.33%;
-  text-align: center; /* optional */
+  padding: 10px 12px;
+  text-align: left;
 }
+
+.custom-table thead th {
+  background-color: #137cbd;
+  color: white;
+}
+
+
+@media (min-width: 769px) {
+
+  .custom-table {
+    width: 70%;
+    table-layout: fixed;
+  }
+
+  /* S.No column */
+  .custom-table th:nth-child(1),
+  .custom-table td:nth-child(1) {
+    width: 80px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  /* Equal remaining columns */
+  .custom-table th:nth-child(2),
+  .custom-table td:nth-child(2),
+  .custom-table th:nth-child(3),
+  .custom-table td:nth-child(3) {
+    width: calc((100% - 80px) / 2);
+  }
+}
+
+
+
+
+/* -------- MOBILE VIEW -------- */
+@media (max-width: 768px) {
+
+  /* Reset desktop behavior */
+  .custom-table {
+    table-layout: auto;
+  }
+
+  .custom-table,
+  .custom-table thead,
+  .custom-table tbody,
+  .custom-table tfoot,
+  .custom-table tr,
+  .custom-table th,
+  .custom-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .custom-table thead {
+    display: none;
+  }
+
+  .custom-table tbody tr {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .custom-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    word-break: normal; /* 🔑 fixes broken text */
+  }
+
+  .custom-table td::before {
+    font-weight: 600;
+    color: #5c7080;
+  }
+
+  .custom-table td:nth-child(1)::before { content: "S.No"; }
+  .custom-table td:nth-child(2)::before { content: "Name"; }
+  .custom-table td:nth-child(3)::before { content: "Email"; }
+
+  .custom-table tfoot button {
+    width: 100%;
+  }
+}
+
