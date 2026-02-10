@@ -68,7 +68,7 @@ export async function syncPendingUsers() {
 
       const result = await res.json();
 
-      // ✅ Success
+      // Success
       if (res.ok && result.Status === "Y") {
         const tx = db.transaction("pendingUsers", "readwrite");
         tx.objectStore("pendingUsers").delete(key);
@@ -76,7 +76,7 @@ export async function syncPendingUsers() {
         continue;
       }
 
-      // ⚠️ Duplicate email → remove to avoid infinite retry
+      // Duplicate email → remove to avoid infinite retry
       if (res.status === 422) {
         console.warn(
           "SYNC SKIPPED (validation):",

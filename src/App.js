@@ -24,6 +24,8 @@ function App() {
 
     useEffect(() => {
         async function load() {
+            console.log('Check navi',navigator);
+            
             if (navigator.onLine) {
                 try {
                     const res = await fetch(
@@ -32,7 +34,7 @@ function App() {
                     const json = await res.json();
 
                     await saveUsers(json.Data); // save API users
-                    await loadFromDB();         // 👈 ALWAYS merge
+                    await loadFromDB();         // ALWAYS merge
                 } catch {
                     loadFromDB();
                 }
@@ -132,59 +134,9 @@ function App() {
 
 
 
-    // function onChangeHandler(id, key, value) {
-    //     setUsers((users) => {
-    //         return users.map(user => {
-    //             return user.id === id ? { ...user, [key]: value } : user;
-    //         })
-    //     })
-    // }
-
-    // function updateUser(id) {
-    //     const user = users.find((user) => user.id === id);
-    //     fetch(`https://jsonplaceholder.typicode.com/users/10`,
-    //         {
-    //             method: "PUT",
-    //             body: JSON.stringify(user),
-    //             headers: {
-    //                 "Content-Type": "application/json; charset=UTF-8 "
-    //             }
-    //         }
-    //     )
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             AppToaster.show({
-    //                 message: "user updated successfully",
-    //                 intent: 'success',
-    //                 timeout: 3000
-    //             })
-
-    //         })
-
-    // }
-
-    // function deleteUser(id) {
-    //     fetch(`https://jsonplaceholder.typicode.com/users/${id}`,
-    //         {
-    //             method: "DELETE",
-    //         })
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             setUsers((users) => {
-    //                 return users.filter(user => user.id !== id)
-    //             })
-
-    //             AppToaster.show({
-    //                 message: "user deleted successfully",
-    //                 intent: 'success',
-    //                 timeout: 3000
-    //             })
-
-    //         })
-    // }
+  
 
     return (
-
 
         <div className="App table-wrapper" >
             <table className="bp4-html-table bp4-html-table-striped custom-table" >
@@ -197,9 +149,10 @@ function App() {
                 </thead>
 
                 <tbody>
-                    {users.map(skill => (
-                        <tr key={skill.RecordID}>
-                            <td>{skill.RecordID}</td>
+                    {users.map((skill, index) => (
+                        <tr key={skill.RecordID || index}>
+                            <td>{index + 1}</td>
+                            {/* <td>{skill.RecordID}</td> */}
                             <td>{skill.Name}</td>
                             <td>{skill.Email}</td>
                             {/* <td><EditableText onChange={value => onChangeHandler(skill.RecordID, 'Email', value)} value={skill.Email} /></td> */}
